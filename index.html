@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>AOM - Calculatrice 2025</title>
+    <description>Mini projet d'une calculatrice ayant les mêmes fonctionnalités que celle de Windows 11 🧮</description>
+</head>
+
+<body>
+    <header>
+        <h1>Calculatrice AOM - 2025</h1>
+        <a href="https://github.com/arthuroberlin/calculatrice" target="_blank"><img class="github__icon"
+                src="./github-mark.svg" /></a>
+    </header>
+
+    <div class="wrapper">
+        <div id="calculatrice">
+
+            <div class="row">
+                <!-- Somme + pourcentage + cta % -->
+                <button id="pourcentage" value="%">%</button>
+                <!-- Supprime la dernière entrée -->
+                <button id="clearLastEntry">CE</button>
+                <!-- Reset à 0 -->
+                <button id="clear">C</button>
+                <!-- Supprime le dernier chiffre entré-->
+                <button id="del">DEL</button>
+            </div>
+            <div class="row">
+                <!-- Divise le chiffre par un dénominateur de 1, exemple 2 + cta 1/x = 0.5 __ (1/(2))  -->
+                <button value="1/x" id="denominatorOne">1/x</button>
+                <!-- Chiffre au carré, exemple : 2 + cta x² = 4-->
+                <button id="squareOf" value="x²">x²</button>
+                <!-- Racine carrée principale -->
+                <button id="square" value="²√x">²√x</button>
+                <!-- Division -->
+                <button type="button" value="/" id="division">/</button>
+            </div>
+            <div class="row">
+                <button type="button" value="7" id="7">7</button>
+                <button type="button" value="8" id="8">8</button>
+                <button type="button" value="9" id="9">9</button>
+                <!-- Multiplication -->
+                <button type="button" value="x" id="multiplication">X</button>
+            </div>
+            <div class="row">
+                <button type="button" value="4" id="4">4</button>
+                <button type="button" value="5" id="5">5</button>
+                <button type="button" value="6" id="6">6</button>
+                <!-- Soustraction -->
+                <button type="button" value="-" id="subtraction">-</button>
+            </div>
+            <div class="row">
+                <button type="button" value="1" id="1">1</button>
+                <button type="button" value="2" id="2">2</button>
+                <button type="button" value="3" id="3">3</button>
+                <!-- Addition -->
+                <button type="button" value="+" id="addition">+</button>
+            </div>
+            <div class="row">
+                <!-- Division par deux -->
+                <button type="button" value="-" id="negate">+/-</button>
+                <button type="button" value="0" id="0">0</button>
+                <button type="button" id="dot">.</button>
+                <button type="button" value="=" id="egal">=</button>
+            </div>
+        </div>
+        <div class="result">
+            <span class="arrow">➡️</span>
+            <span class="firstEntry">0</span>
+            <span class="operator">+</span>
+            <span class="secondEntry">0</span>
+            <span class="pourcent"></span>
+            <span class="equal">=</span>
+            <span id="calculResult">0</span>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
